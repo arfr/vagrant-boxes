@@ -14,3 +14,7 @@ Download
 -------------
 
 [Google Drive](https://googledrive.com/host/0B6dgb1NG97heZDBnRzlVWWRKOE0)
+
+```
+config.vm.box_url = "https://googledrive.com/host/0B6dgb1NG97heZDBnRzlVWWRKOE0/virtualbox/ubuntu-14.04-server-amd64.box"
+```
