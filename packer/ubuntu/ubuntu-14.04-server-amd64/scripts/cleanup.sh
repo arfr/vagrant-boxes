@@ -42,7 +42,7 @@ rm -rf /tmp/*
 rm -rf /usr/src/virtualbox-ose-guest*
 rm -rf /usr/src/vboxguest*
 
+date > /home/vagrant/.built_date
+
 dd if=/dev/zero of=/EMPTY bs=1M
 rm -f /EMPTY
-
-date > /home/vagrant/.built_date
