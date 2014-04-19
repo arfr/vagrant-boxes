@@ -18,7 +18,7 @@
             ["modifyvm", "{{.Name}}", "--cpus", "1"]
         ],
 
-        "disk_size": 2048,
+        "disk_size": 3072,
 
         "iso_url": "{{ user `iso_url` }}",
         "iso_checksum": "{{ user `iso_checksum` }}",
