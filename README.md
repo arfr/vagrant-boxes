@@ -2,6 +2,14 @@
 
 > Tested on Windows 7 with VirtualBox 4.3.10, Packer 0.5.2 and Vagrant 1.5.3
 
+# Boxes
+
+All Boxes are x86_64 and non-desktop
+
+ - Ubuntu 14.04 (Trusty Tahr)
+ - Debian 7.4 (Wheezy)
+
+
 ## Inside
 
  - pre-installed
@@ -10,7 +18,7 @@
    - nfs-common
 
  - vm-settings
-   - Disk Size: 4GB
+   - DiskSize: 4GB
    - CPU: 1
    - RAM: 512MB
 
