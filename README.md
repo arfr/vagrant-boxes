@@ -4,24 +4,23 @@
 
 ## Inside
 
-**pre-installed**
-* openssh-server
-* curl
-* nfs-common
-* ntp
+ - pre-installed
+   - openssh-server
+   - curl
+   - nfs-common
 
-**vm-settings**
-* Disk Size: 3GB
-* CPU: 1
-* RAM: 512MB
+ - vm-settings
+   - Disk Size: 4GB
+   - CPU: 1
+   - RAM: 512MB
 
-Timezone is Etc/UTC and system language is EN
+Timezone is Etc/UTC and the system language is EN
 
 ## Requirements
 
-* Virtualbox: [https://www.virtualbox.org](https://www.virtualbox.org)
-* Vagrant: [http://www.vagrantup.com](http://www.vagrantup.com/)
-* Packer: [http://www.packer.io](http://www.packer.io)
+ - Virtualbox: [https://www.virtualbox.org](https://www.virtualbox.org)
+ - Vagrant: [http://www.vagrantup.com](http://www.vagrantup.com/)
+ - Packer: [http://www.packer.io](http://www.packer.io)
 
 ## Getting Started
 
