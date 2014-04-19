@@ -18,7 +18,7 @@ All Boxes are x86_64 and non-desktop
    - nfs-common
 
  - vm-settings
-   - DiskSize: 4GB
+   - DiskSize: 4GB (LVM)
    - CPU: 1
    - RAM: 512MB
 
