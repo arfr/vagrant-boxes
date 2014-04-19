@@ -2,7 +2,7 @@
 
 > Tested on Windows 7 with VirtualBox 4.3.10, Packer 0.5.2 and Vagrant 1.5.3
 
-# Boxes
+## Boxes
 
 All Boxes are x86_64 and non-desktop
 
