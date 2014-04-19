@@ -4,8 +4,6 @@
 
 ## Inside
 
-VirtualBox Guest Additions 4.3.10
-
 **pre-installed**
 * openssh-server
 * curl
