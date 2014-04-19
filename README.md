@@ -11,7 +11,7 @@
 * ntp
 
 **vm-settings**
-* Disk Size: 2GB
+* Disk Size: 3GB
 * CPU: 1
 * RAM: 512MB
 
