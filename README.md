@@ -18,6 +18,7 @@ a minimal install
    - openssh-server
    - curl
    - nfs-common
+   - sudo (on debian)
 
  - vm-settings
    - DiskSize: 4GB (LVM)
