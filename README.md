@@ -12,6 +12,8 @@ All Boxes are x86_64 and non-desktop
 
 ## Inside
 
+a minimal install
+
  - pre-installed
    - openssh-server
    - curl
