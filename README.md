@@ -20,6 +20,7 @@ a minimal install
    - nfs-common
    - sudo (on debian)
    - puppet-common (latest)
+   - chef (latest)
 
  - vm-settings
    - DiskSize: 4GB (LVM)
