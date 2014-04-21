@@ -12,10 +12,13 @@ All Boxes are x86_64 and non-desktop
 
 ## Inside
 
+a minimal install
+
  - pre-installed
    - openssh-server
    - curl
    - nfs-common
+   - sudo (on debian)
 
  - vm-settings
    - DiskSize: 4GB (LVM)
