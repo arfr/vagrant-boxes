@@ -42,6 +42,7 @@
         "type": "shell",
         "scripts": [
             "scripts/base.sh",
+            "scripts/puppet.sh",
             "scripts/vagrant.sh",
             "scripts/virtualbox.sh",
             "scripts/grub.sh",
