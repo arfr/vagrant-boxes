@@ -19,6 +19,7 @@ a minimal install
    - curl
    - nfs-common
    - sudo (on debian)
+   - puppet-common (latest)
 
  - vm-settings
    - DiskSize: 4GB (LVM)
