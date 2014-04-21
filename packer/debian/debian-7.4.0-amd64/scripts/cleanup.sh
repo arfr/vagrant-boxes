@@ -36,7 +36,6 @@ rm -f /etc/init.d/ssh_gen_host_keys
 EOF
 
 chmod a+x /etc/init.d/ssh_gen_host_keys
-ln -s /usr/lib/insserv/insserv /sbin/insserv
 insserv /etc/init.d/ssh_gen_host_keys
 
 rm -rf /tmp/*
