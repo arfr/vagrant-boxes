@@ -46,6 +46,11 @@ git clone git@github.com:arfr/vagrant-boxes.git
 ### Build
 
 ```sh
+cd vagrant-boxes/packer/ubuntu/ubuntu-14.04-server-amd64
+packer build packer.json
+```
+or (windows)
+```sh
 cd vagrant-boxes
 build
 ```
