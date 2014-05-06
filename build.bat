@@ -53,7 +53,7 @@ GOTO=%pick%
     echo --------------------------------------------------------------------------------
     vagrant box add ubuntu-14.04-server-amd64 %root_dir%\boxes\virtualbox\ubuntu-14.04-server-amd64.box
     echo.
-    if %pick% == 0 (goto 2) else (goto end)
+    if %pick% == 0 (goto 3) else (goto end)
 
 :3
     echo BUILD:     centos-6.5-amd64.box
