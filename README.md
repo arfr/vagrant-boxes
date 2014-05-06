@@ -8,6 +8,7 @@ All Boxes are x86_64 and non-desktop
 
  - Ubuntu 14.04 (Trusty Tahr)
  - Debian 7.4 (Wheezy)
+ - CentOS 6.5
 
 
 ## Inside
@@ -18,16 +19,18 @@ a minimal install
    - openssh-server
    - curl
    - nfs-common
-   - sudo (on debian)
-   - puppet-common (latest)
+   - nfs-utils (centos)
+   - sudo (on debian, centos)
+   - puppet-common (latest) | puppet (centos)
    - chef (latest)
+   - wget (centos)
 
  - vm-settings
    - DiskSize: 4GB (LVM)
    - CPU: 1
    - RAM: 512MB
 
-Timezone is Etc/UTC and the system language is EN
+Timezone is UTC and the system language is EN
 
 ## Requirements
 

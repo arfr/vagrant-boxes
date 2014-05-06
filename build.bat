@@ -10,6 +10,7 @@ echo ---------------------------------------------------------------------------
 echo    0 - All
 echo    1 - Debian 7.4 (Wheezy)
 echo    2 - Ubuntu 14.04 (Trusty Tahr)
+echo    3 - CentOS 6.5
 echo.
 echo --------------------------------------------------------------------------------
 echo.
@@ -52,8 +53,27 @@ GOTO=%pick%
     echo --------------------------------------------------------------------------------
     vagrant box add ubuntu-14.04-server-amd64 %root_dir%\boxes\virtualbox\ubuntu-14.04-server-amd64.box
     echo.
+    if %pick% == 0 (goto 2) else (goto end)
+
+:3
+    echo BUILD:     centos-6.5-amd64.box
+    echo --------------------------------------------------------------------------------
+    chdir %root_dir%\packer\centos\centos-6.5-amd64
+    packer build packer.json
+    echo.
+    echo REMOVE:    centos-6.5-amd64.box
+    echo --------------------------------------------------------------------------------
+    vagrant box remove centos-6.5-amd64
+    echo.
+    echo ADD:       centos-6.5-amd64.box
+    echo --------------------------------------------------------------------------------
+    vagrant box add centos-6.5-amd64 %root_dir%\boxes\virtualbox\centos-6.5-amd64.box
+    echo.
     goto end
 
 :end
     echo --------------------------------------------------------------------------------
     echo FINISHED
+    chdir %root_dir%
+
+:q
