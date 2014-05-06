@@ -26,7 +26,7 @@ a minimal install
    - wget (centos)
 
  - vm-settings
-   - DiskSize: 4GB (LVM)
+   - DiskSize: 10GB (LVM)
    - CPU: 1
    - RAM: 512MB
 
