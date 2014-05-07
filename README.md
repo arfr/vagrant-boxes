@@ -4,7 +4,7 @@
 
 ## Boxes
 
-All Boxes are x86_64 and non-desktop
+All Boxes are x86_64 minimal install and non-desktop
 
  - Ubuntu 14.04 (Trusty Tahr)
  - Debian 7.4 (Wheezy)
