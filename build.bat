@@ -8,8 +8,8 @@ echo    VAGRANT BOXES (builder)
 echo.
 echo --------------------------------------------------------------------------------
 echo    0 - All
-echo    1 - Debian 7.4 (Wheezy)
-echo    2 - Ubuntu 14.04 (Trusty Tahr)
+echo    1 - Debian 7.5
+echo    2 - Ubuntu 14.04
 echo    3 - CentOS 6.5
 echo.
 echo --------------------------------------------------------------------------------
@@ -24,18 +24,18 @@ GOTO=%pick%
     goto 1
 
 :1
-    echo BUILD:     debian-7.4.0-amd64.box
+    echo BUILD:     debian-7.5-amd64.box
     echo --------------------------------------------------------------------------------
-    chdir %root_dir%\packer\debian\debian-7.4.0-amd64
+    chdir %root_dir%\packer\debian\debian-7.5-amd64
     packer build packer.json
     echo.
-    echo REMOVE:    debian-7.4.0-amd64
+    echo REMOVE:    debian-7.5-amd64
     echo --------------------------------------------------------------------------------
-    vagrant box remove debian-7.4.0-amd64
+    vagrant box remove debian-7.5-amd64
     echo.
-    echo ADD:       debian-7.4.0-amd64
+    echo ADD:       debian-7.5-amd64
     echo --------------------------------------------------------------------------------
-    vagrant box add debian-7.4.0-amd64 %root_dir%\boxes\virtualbox\debian-7.4.0-amd64.box
+    vagrant box add debian-7.5-amd64 %root_dir%\boxes\virtualbox\debian-7.5-amd64.box
     echo.
     if %pick% == 0 (goto 2) else (goto end)
 

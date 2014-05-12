@@ -1,11 +1,11 @@
 [
     {
-        "name": "Debian 7.4 (Wheezy)",
-        "box": "debian-7.4.0-amd64",
-        "box_url": "https://googledrive.com/host/0B6dgb1NG97heZDBnRzlVWWRKOE0/virtualbox/debian-7.4.0-amd64.box"
+        "name": "Debian 7.5",
+        "box": "debian-7.5-amd64",
+        "box_url": "https://googledrive.com/host/0B6dgb1NG97heZDBnRzlVWWRKOE0/virtualbox/debian-7.5-amd64.box"
     },
     {
-        "name": "Ubuntu 14.04 (Trusty Tahr)",
+        "name": "Ubuntu 14.04",
         "box": "ubuntu-14.04-server-amd64",
         "box_url": "https://googledrive.com/host/0B6dgb1NG97heZDBnRzlVWWRKOE0/virtualbox/ubuntu-14.04-server-amd64.box"
     },

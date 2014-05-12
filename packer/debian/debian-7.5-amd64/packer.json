@@ -1,8 +1,8 @@
 {
     "variables": {
-        "vm_name": "debian-7.4.0-amd64",
-        "iso_url": "http://cdimage.debian.org/debian-cd/7.4.0/amd64/iso-cd/debian-7.4.0-amd64-netinst.iso",
-        "iso_checksum": "e7e9433973f082a297793c3c5010b2c5"
+        "vm_name": "debian-7.5-amd64",
+        "iso_url": "http://cdimage.debian.org/debian-cd/7.5.0/amd64/iso-cd/debian-7.5.0-amd64-netinst.iso",
+        "iso_checksum": "dcc0165f562218eb8535b1beec040a43731391700b99610262593852674f7d67"
     },
     "builders": [{
         "vm_name": "{{ user `vm_name` }}",
@@ -22,7 +22,7 @@
         
         "iso_url": "{{ user `iso_url` }}",
         "iso_checksum": "{{ user `iso_checksum` }}",
-        "iso_checksum_type": "md5",
+        "iso_checksum_type": "sha256",
 
         "http_directory": "http",
 

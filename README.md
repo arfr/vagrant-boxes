@@ -6,8 +6,8 @@
 
 All Boxes are x86_64 minimal install and non-desktop
 
- - Ubuntu 14.04 (Trusty Tahr)
- - Debian 7.4 (Wheezy)
+ - Ubuntu 14.04 
+ - Debian 7.5
  - CentOS 6.5
 
 
