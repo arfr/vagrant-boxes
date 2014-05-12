@@ -1,6 +1,6 @@
 {
     "variables": {
-        "vm_name": "centos-6.5-minimal-amd64",
+        "vm_name": "centos-6.5-amd64",
         "iso_url": "http://ftp.tu-chemnitz.de/pub/linux/centos/6.5/isos/x86_64/CentOS-6.5-x86_64-minimal.iso",
         "iso_checksum": "0d9dc37b5dd4befa1c440d2174e88a87"
     },
