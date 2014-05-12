@@ -1,6 +1,6 @@
 [
     {
-        "name": "Debian 7.4 (Wheezy)",
+        "name": "Debian 7.5 (Wheezy)",
         "box": "debian-7.4.0-amd64",
         "box_url": "https://googledrive.com/host/0B6dgb1NG97heZDBnRzlVWWRKOE0/virtualbox/debian-7.4.0-amd64.box"
     },
