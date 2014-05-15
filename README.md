@@ -4,12 +4,11 @@
 
 ## Boxes
 
-All Boxes are x86_64 minimal install and non-desktop
+All Boxes are server, minimal install and non-desktop
 
- - Ubuntu 14.04 
  - Debian 7.5
+ - Ubuntu 14.04
  - CentOS 6.5
-
 
 ## Inside
 
@@ -49,7 +48,7 @@ git clone git@github.com:arfr/vagrant-boxes.git
 ### Build
 
 ```sh
-cd vagrant-boxes/packer/ubuntu/ubuntu-14.04-server-amd64
+cd vagrant-boxes/packer/ubuntu/ubuntu-14.04-amd64
 packer build packer.json
 ```
 or (windows)
@@ -60,16 +59,16 @@ build
 
 ### Boxes
 
-Take a look inside `/vagrant-boxes/boxes/virtualbox/` and you will find `ubuntu-14.04-server-amd64.box` after a successful build.
+Take a look inside `/vagrant-boxes/boxes/virtualbox/` and you will find `ubuntu-14.04-amd64.box` after a successful build.
 
 ### Vagrant
 
 ```sh
-vagrant box add ubuntu-14.04-server-amd64 ./boxes/virtualbox/ubuntu-14.04-server-amd64.box
+vagrant box add ubuntu-14.04-amd64 ./boxes/virtualbox/ubuntu-14.04-amd64.box
 ```
 
 ```ruby
-config.vm.box = "ubuntu-14.04-server-amd64"
+config.vm.box = "ubuntu-14.04-amd64"
 ```
 
 ## Download
@@ -77,7 +76,7 @@ config.vm.box = "ubuntu-14.04-server-amd64"
 The build boxes are available at [Google Drive](https://googledrive.com/host/0B6dgb1NG97heZDBnRzlVWWRKOE0) you can download it or put the prefered box url inside the Vagrantfile.
 
 ```ruby
-config.vm.box_url = "https://googledrive.com/host/0B6dgb1NG97heZDBnRzlVWWRKOE0/virtualbox/ubuntu-14.04-server-amd64.box"
+config.vm.box_url = "https://googledrive.com/host/0B6dgb1NG97heZDBnRzlVWWRKOE0/virtualbox/ubuntu-14.04-amd64.box"
 ```
 
 ## License
