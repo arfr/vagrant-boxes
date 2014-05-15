@@ -1,17 +1,35 @@
 [
     {
         "name": "Debian 7.5",
-        "box": "debian-7.5-amd64",
-        "box_url": "https://googledrive.com/host/0B6dgb1NG97heZDBnRzlVWWRKOE0/virtualbox/debian-7.5-amd64.box"
+        "amd64": {
+            "box": "debian-7.5-amd64",
+            "box_url": "https://googledrive.com/host/0B6dgb1NG97heZDBnRzlVWWRKOE0/virtualbox/debian-7.5-amd64.box"
+        },
+        "i386": {
+            "box": "debian-7.5-i386",
+            "box_url": "https://googledrive.com/host/0B6dgb1NG97heZDBnRzlVWWRKOE0/virtualbox/debian-7.5-i386.box"
+        }
     },
     {
         "name": "Ubuntu 14.04",
-        "box": "ubuntu-14.04-amd64",
-        "box_url": "https://googledrive.com/host/0B6dgb1NG97heZDBnRzlVWWRKOE0/virtualbox/ubuntu-14.04-amd64.box"
+        "amd64": {
+            "box": "ubuntu-14.04-amd64",
+            "box_url": "https://googledrive.com/host/0B6dgb1NG97heZDBnRzlVWWRKOE0/virtualbox/ubuntu-14.04-amd64.box"
+        },
+        "i386": {
+            "box": "ubuntu-14.04-i386",
+            "box_url": "https://googledrive.com/host/0B6dgb1NG97heZDBnRzlVWWRKOE0/virtualbox/ubuntu-14.04-i386.box"
+        }
     },
     {
         "name": "CentOS 6.5",
-        "box": "centos-6.5-amd64",
-        "box_url": "https://googledrive.com/host/0B6dgb1NG97heZDBnRzlVWWRKOE0/virtualbox/centos-6.5-amd64.box"
+        "amd64": {
+            "box": "centos-6.5-amd64",
+            "box_url": "https://googledrive.com/host/0B6dgb1NG97heZDBnRzlVWWRKOE0/virtualbox/centos-6.5-amd64.box"
+        },
+        "i386": {
+            "box": "centos-6.5-i386",
+            "box_url": "https://googledrive.com/host/0B6dgb1NG97heZDBnRzlVWWRKOE0/virtualbox/centos-6.5-i386.box"
+        }
     }
 ]
