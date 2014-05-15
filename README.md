@@ -76,7 +76,7 @@ config.vm.box = "ubuntu-14.04-amd64"
 The build boxes are available at [Google Drive](https://googledrive.com/host/0B6dgb1NG97heZDBnRzlVWWRKOE0) you can download it or put the prefered box url inside the Vagrantfile.
 
 ```ruby
-config.vm.box_url = "https://googledrive.com/host/0B6dgb1NG97heZDBnRzlVWWRKOE0/virtualbox/ubuntu-14.04-amd64.box"
+config.vm.box_url = "http://boxes.arfr.de/ubuntu-14.04-amd64.box"
 ```
 
 ## License
