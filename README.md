@@ -2,8 +2,6 @@
 
 > Tested on Windows 7 with VirtualBox 4.3.10, Packer 0.5.2 and Vagrant 1.5.3
 
-> Tested on Fedora 20 with VirtualBox 4.3.10, Packer 0.5.2 and Vagrant 1.5.3
-
 ## Boxes
 
 All Boxes are server, minimal install and non-desktop
