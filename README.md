@@ -7,7 +7,7 @@
 All Boxes are server, minimal install and non-desktop
 
  - Debian 7.8
- - Ubuntu 14.04
+ - Ubuntu 14.04 (14.04.1 LTS)
  - CentOS 6.5
 
 ## Inside
