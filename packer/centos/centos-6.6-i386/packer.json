@@ -1,8 +1,8 @@
 {
     "variables": {
-        "vm_name": "centos-6.5-i386",
-        "iso_url": "http://ftp.tu-chemnitz.de/pub/linux/centos/6.5/isos/i386/CentOS-6.5-i386-minimal.iso",
-        "iso_checksum": "3e8fb326bf389c631dcea9c16da6ebcd2c6f150d526e147c1307beb9314eb794"
+        "vm_name": "centos-6.6-i386",
+        "iso_url": "http://ftp.tu-chemnitz.de/pub/linux/centos/6.6/isos/i386/CentOS-6.6-i386-minimal.iso",
+        "iso_checksum": "a3e9d4e699193f61ad8703d1322676bad416f7e8b3f74cf62a1831cc45703190"
     },
     "builders": [{
         "vm_name": "{{ user `vm_name` }}",

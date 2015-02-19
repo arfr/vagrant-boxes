@@ -7,10 +7,10 @@ echo ---------------------------------------------------------------------------
 echo    VAGRANT BOXES (builder)
 echo.
 echo --------------------------------------------------------------------------------
-echo    0 - All
+echo    0 - All (broken)
 echo    1 - Debian 7.8
 echo    2 - Ubuntu 14.04 (14.04.1 LTS)
-echo    3 - CentOS 6.5
+echo    3 - CentOS 6.6
 echo.
 echo --------------------------------------------------------------------------------
 echo.
@@ -58,18 +58,18 @@ GOTO=%pick%
     if %pick% == 0 (goto 3) else (goto end)
 
 :3
-    echo BUILD:     centos-6.5-%arch%.box
+    echo BUILD:     centos-6.6-%arch%.box
     echo --------------------------------------------------------------------------------
-    chdir %root_dir%\packer\centos\centos-6.5-%arch%
+    chdir %root_dir%\packer\centos\centos-6.6-%arch%
     packer build packer.json
     echo.
-    echo REMOVE:    centos-6.5-%arch%
+    echo REMOVE:    centos-6.6-%arch%
     echo --------------------------------------------------------------------------------
-    vagrant box remove centos-6.5-%arch%
+    vagrant box remove centos-6.6-%arch%
     echo.
-    echo ADD:       centos-6.5-%arch%
+    echo ADD:       centos-6.6-%arch%
     echo --------------------------------------------------------------------------------
-    vagrant box add centos-6.5-%arch% %root_dir%\boxes\virtualbox\centos-6.5-%arch%.box
+    vagrant box add centos-6.6-%arch% %root_dir%\boxes\virtualbox\centos-6.6-%arch%.box
     echo.
     goto end
 
