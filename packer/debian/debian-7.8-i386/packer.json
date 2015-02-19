@@ -1,8 +1,8 @@
 {
     "variables": {
-        "vm_name": "debian-7.5-i386",
-        "iso_url": "http://cdimage.debian.org/debian-cd/7.5.0/i386/iso-cd/debian-7.5.0-i386-netinst.iso",
-        "iso_checksum": "bd558a6a4eb9a7a239208cfcf75a4bb163dfbd0da0952cee8dbda8d9b3064e94"
+        "vm_name": "debian-7.8-i386",
+        "iso_url": "http://cdimage.debian.org/debian-cd/7.8.0/i386/iso-cd/debian-7.8.0-i386-netinst.iso",
+        "iso_checksum": "e79597f61fa0a4e9a4590186c15f0851c7baa355c88f8f55005badec32a805e9"
     },
     "builders": [{
         "vm_name": "{{ user `vm_name` }}",
