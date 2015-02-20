@@ -31,5 +31,12 @@
             "box": "centos-6.6-i386",
             "box_url": "https://googledrive.com/host/0B6dgb1NG97heZDBnRzlVWWRKOE0/virtualbox/centos-6.6-i386.box"
         }
+    },
+    {
+        "name": "CentOS 7.0",
+        "amd64": {
+            "box": "centos-7.0-amd64",
+            "box_url": "https://googledrive.com/host/0B6dgb1NG97heZDBnRzlVWWRKOE0/virtualbox/centos-7.0-amd64.box"
+        }
     }
 ]

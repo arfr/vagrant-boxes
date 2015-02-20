@@ -11,6 +11,7 @@ echo    0 - All (broken)
 echo    1 - Debian 7.8
 echo    2 - Ubuntu 14.04 (14.04.1 LTS)
 echo    3 - CentOS 6.6
+echo    4 - CentOS 7.0 (only amd64)
 echo.
 echo --------------------------------------------------------------------------------
 echo.
@@ -70,6 +71,22 @@ GOTO=%pick%
     echo ADD:       centos-6.6-%arch%
     echo --------------------------------------------------------------------------------
     vagrant box add centos-6.6-%arch% %root_dir%\boxes\virtualbox\centos-6.6-%arch%.box
+    echo.
+    if %pick% == 0 (goto 4) else (goto end)
+
+:4
+    echo BUILD:     centos-7.0-%arch%.box
+    echo --------------------------------------------------------------------------------
+    chdir %root_dir%\packer\centos\centos-7.0-%arch%
+    packer build packer.json
+    echo.
+    echo REMOVE:    centos-7.0-%arch%
+    echo --------------------------------------------------------------------------------
+    vagrant box remove centos-7.0-%arch%
+    echo.
+    echo ADD:       centos-7.0-%arch%
+    echo --------------------------------------------------------------------------------
+    vagrant box add centos-7.0-%arch% %root_dir%\boxes\virtualbox\centos-7.0-%arch%.box
     echo.
     goto end
 
