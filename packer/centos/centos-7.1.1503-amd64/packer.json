@@ -1,8 +1,8 @@
 {
     "variables": {
-        "vm_name": "centos-7.0-amd64",
-        "iso_url": "http://ftp.tu-chemnitz.de/pub/linux/centos/7/isos/x86_64/CentOS-7.0-1406-x86_64-Minimal.iso",
-        "iso_checksum": "04e99a4f1a013b95a7ebc9a90ffa9ac64d28eb9872bc193fbd7c581ec9b6a360"
+        "vm_name": "centos-7.1.1503-amd64",
+        "iso_url": "http://ftp.tu-chemnitz.de/pub/linux/centos/7/isos/x86_64/CentOS-7-x86_64-Minimal-1503-01.iso",
+        "iso_checksum": "7cf1ac8da13f54d6be41e3ccf228dc5bb35792f515642755ff4780d5714d4278"
     },
     "builders": [{
         "vm_name": "{{ user `vm_name` }}",
