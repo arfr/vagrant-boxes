@@ -33,10 +33,10 @@
         }
     },
     {
-        "name": "CentOS 7.0",
+        "name": "CentOS 7.1.1503",
         "amd64": {
-            "box": "centos-7.0-amd64",
-            "box_url": "https://googledrive.com/host/0B6dgb1NG97heZDBnRzlVWWRKOE0/virtualbox/centos-7.0-amd64.box"
+            "box": "centos-7.1.1503-amd64",
+            "box_url": "https://googledrive.com/host/0B6dgb1NG97heZDBnRzlVWWRKOE0/virtualbox/centos-7.1.1503-amd64.box"
         }
     }
 ]
