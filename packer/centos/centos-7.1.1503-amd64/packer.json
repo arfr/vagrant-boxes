@@ -44,7 +44,6 @@
             "scripts/repos.sh",
             "scripts/base.sh",
             "scripts/puppet.sh",
-            "scripts/chef.sh",
             "scripts/vagrant.sh",
             "scripts/virtualbox.sh",
             "scripts/grub.sh",

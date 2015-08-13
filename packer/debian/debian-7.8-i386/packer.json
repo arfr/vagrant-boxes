@@ -1,7 +1,7 @@
 {
     "variables": {
         "vm_name": "debian-7.8-i386",
-        "iso_url": "http://cdimage.debian.org/debian-cd/7.8.0/i386/iso-cd/debian-7.8.0-i386-netinst.iso",
+        "iso_url": "http://cdimage.debian.org/cdimage/archive/7.8.0/i386/iso-cd/debian-7.8.0-i386-netinst.iso",
         "iso_checksum": "e79597f61fa0a4e9a4590186c15f0851c7baa355c88f8f55005badec32a805e9"
     },
     "builders": [{
@@ -19,7 +19,7 @@
         ],
 
         "disk_size": 10240,
-        
+
         "iso_url": "{{ user `iso_url` }}",
         "iso_checksum": "{{ user `iso_checksum` }}",
         "iso_checksum_type": "sha256",
@@ -43,7 +43,6 @@
         "scripts": [
             "scripts/base.sh",
             "scripts/puppet.sh",
-            "scripts/chef.sh",
             "scripts/vagrant.sh",
             "scripts/virtualbox.sh",
             "scripts/grub.sh",

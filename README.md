@@ -6,15 +6,15 @@
 
 All Boxes are server, minimal install and non-desktop
 
- - Debian 7.8
  - Debian 8.1
- - Ubuntu 14.04 (14.04.1 LTS)
- - CentOS 6.6
- - CentOS 7.1.1503
+ - Debian 7.8
+ - Ubuntu 14.04 (14.04.3 LTS)
+ - CentOS 7.1.1503 (amd64 only)
+ - CentOS 6.7
 
 ## Inside
 
-a minimal install
+a minimal, server install
 
  - pre-installed
    - openssh-server
@@ -23,7 +23,6 @@ a minimal install
    - nfs-utils (centos)
    - sudo (on debian, centos)
    - puppet-common (latest) | puppet (centos)
-   - chef (latest)
    - wget (centos)
 
  - vm-settings
@@ -80,6 +79,15 @@ The build boxes are available at [Google Drive](https://googledrive.com/host/0B6
 ```ruby
 config.vm.box_url = "http://boxes.arfr.de/ubuntu-14.04-amd64.box"
 ```
+
+## TODO
+
+- add hostnames
+- increase disk size
+- Prevent packaged version of VirtualBox Guest Additions being installed (fix deb8.1)
+- pre install ansible
+- update Google Drive
+- add build.sh (for linux)
 
 ## License
 

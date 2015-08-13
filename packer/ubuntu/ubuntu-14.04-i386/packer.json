@@ -1,8 +1,8 @@
 {
     "variables": {
         "vm_name": "ubuntu-14.04-i386",
-        "iso_url": "http://releases.ubuntu.com/trusty/ubuntu-14.04.1-server-i386.iso",
-        "iso_checksum": "976044842804eafc18390505508958b559c131211160ecae5e60694bdf171f78"
+        "iso_url": "http://releases.ubuntu.com/trusty/ubuntu-14.04.3-server-i386.iso",
+        "iso_checksum": "a5c02e25a8f6ab335269adb1a6c176edff075093b90854439b4a90fce9b31f28"
     },
     "builders": [{
         "vm_name": "{{ user `vm_name` }}",

@@ -1,13 +1,13 @@
 {
     "variables": {
-        "vm_name": "centos-6.6-i386",
-        "iso_url": "http://ftp.tu-chemnitz.de/pub/linux/centos/6.6/isos/i386/CentOS-6.6-i386-minimal.iso",
-        "iso_checksum": "a3e9d4e699193f61ad8703d1322676bad416f7e8b3f74cf62a1831cc45703190"
+        "vm_name": "centos-6.7-amd64",
+        "iso_url": "http://ftp.tu-chemnitz.de/pub/linux/centos/6.7/isos/x86_64/CentOS-6.7-x86_64-minimal.iso",
+        "iso_checksum": "9d3fec5897be6b3fed4d3dda80b8fa7bb62c616bbfd4bdcd27295ca9b764f498"
     },
     "builders": [{
         "vm_name": "{{ user `vm_name` }}",
         "type": "virtualbox-iso",
-        "guest_os_type": "RedHat",
+        "guest_os_type": "RedHat_64",
 
         "headless": false,
         "guest_additions_path": "VBoxGuestAdditions_{{.Version}}.iso",
@@ -44,7 +44,6 @@
             "scripts/repos.sh",
             "scripts/base.sh",
             "scripts/puppet.sh",
-            "scripts/chef.sh",
             "scripts/vagrant.sh",
             "scripts/virtualbox.sh",
             "scripts/grub.sh",

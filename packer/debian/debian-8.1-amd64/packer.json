@@ -28,7 +28,7 @@
 
         "ssh_password": "password",
         "ssh_username": "root",
-        "ssh_wait_timeout": "30000s",
+        "ssh_wait_timeout": "10000s",
 
         "boot_command": [
             "<esc><wait>",
@@ -43,7 +43,6 @@
         "scripts": [
             "scripts/base.sh",
             "scripts/puppet.sh",
-            "scripts/chef.sh",
             "scripts/vagrant.sh",
             "scripts/virtualbox.sh",
             "scripts/grub.sh",
