@@ -8,7 +8,7 @@ All Boxes are server, minimal install and non-desktop
 
  - Debian 8.1
  - Debian 7.8
- - Ubuntu 14.04 (14.04.3 LTS)
+ - Ubuntu 14.04 (14.04.3 LTS) - broken
  - CentOS 7.1.1503 (amd64 only)
  - CentOS 6.7
 
@@ -82,6 +82,7 @@ config.vm.box_url = "http://boxes.arfr.de/ubuntu-14.04-amd64.box"
 
 ## TODO
 
+- fix Ubuntu 14.04 builds
 - add hostnames
 - increase disk size
 - Prevent packaged version of VirtualBox Guest Additions being installed (fix deb8.1)
