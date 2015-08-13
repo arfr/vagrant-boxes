@@ -8,15 +8,19 @@ echo    VAGRANT BOXES (builder)
 echo.
 echo --------------------------------------------------------------------------------
 echo    0 - All (broken)
-echo    1 - Debian 7.8
+echo.
+echo    1 - Debian 8.1
 echo    2 - Ubuntu 14.04 (14.04.1 LTS)
 echo    3 - CentOS 6.6
 echo    4 - CentOS 7.1.1503 (only amd64)
+echo.
+echo    q - Quit
 echo.
 echo --------------------------------------------------------------------------------
 echo.
 
 set /p pick="Please choice: "
+if %pick% == q (goto q)
 echo.
 set /p arch="Which architecture? [amd64|i386]: "
 echo.
@@ -27,18 +31,18 @@ GOTO=%pick%
     goto 1
 
 :1
-    echo BUILD:     debian-7.8-%arch%.box
+    echo BUILD:     debian-8.1-%arch%.box
     echo --------------------------------------------------------------------------------
-    chdir %root_dir%\packer\debian\debian-7.8-%arch%
+    chdir %root_dir%\packer\debian\debian-8.1-%arch%
     packer build packer.json
     echo.
-    echo REMOVE:    debian-7.8-%arch%
+    echo REMOVE:    debian-8.1-%arch%
     echo --------------------------------------------------------------------------------
-    vagrant box remove debian-7.8-%arch%
+    vagrant box remove debian-8.1-%arch%
     echo.
-    echo ADD:       debian-7.8-%arch%
+    echo ADD:       debian-8.1-%arch%
     echo --------------------------------------------------------------------------------
-    vagrant box add debian-7.8-%arch% %root_dir%\boxes\virtualbox\debian-7.8-%arch%.box
+    vagrant box add debian-8.1-%arch% %root_dir%\boxes\virtualbox\debian-8.1-%arch%.box
     echo.
     if %pick% == 0 (goto 2) else (goto end)
 

@@ -1,12 +1,13 @@
 # Vagrant Boxes
 
-> Tested on Windows 7 with VirtualBox 4.3.22, Packer 0.7.5 and Vagrant 1.7.2
+> Tested on Windows 7 with VirtualBox 5.0.0, Packer 0.8.5 and Vagrant 1.7.4
 
 ## Boxes
 
 All Boxes are server, minimal install and non-desktop
 
  - Debian 7.8
+ - Debian 8.1
  - Ubuntu 14.04 (14.04.1 LTS)
  - CentOS 6.6
  - CentOS 7.1.1503
