@@ -4,10 +4,10 @@ set root_dir=%cd%
 
 echo.
 echo --------------------------------------------------------------------------------
-echo    VAGRANT BOXES (builder)
+echo    VAGRANT BOXES (windows builder)
 echo.
 echo --------------------------------------------------------------------------------
-echo    0 - All (broken)
+echo    0 - All
 echo.
 echo    1 - Debian 7.8
 echo    2 - Debian 8.1
@@ -96,6 +96,12 @@ GOTO=%pick%
     if %pick% == 0 (goto 5) else (goto end)
 
 :5
+    if "%arch%" == "i386" (
+        echo Architecture %arch% is not supported by CentOS 7
+        echo.
+        echo.
+        goto end
+    )
     echo BUILD:     centos-7.1.1503-%arch%.box
     echo --------------------------------------------------------------------------------
     chdir %root_dir%\packer\centos\centos-7.1.1503-%arch%
@@ -114,6 +120,8 @@ GOTO=%pick%
 :end
     echo --------------------------------------------------------------------------------
     echo FINISHED
+    echo.
+    echo --------------------------------------------------------------------------------
     chdir %root_dir%
 
 :q

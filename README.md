@@ -8,7 +8,7 @@ All Boxes are server, minimal install and non-desktop
 
  - Debian 8.1
  - Debian 7.8
- - Ubuntu 14.04 (14.04.3 LTS) - broken
+ - Ubuntu 14.04 (14.04.3 LTS)
  - CentOS 7.1.1503 (amd64 only)
  - CentOS 6.7
 
@@ -26,7 +26,7 @@ a minimal, server install
    - wget (centos)
 
  - vm-settings
-   - DiskSize: 10GB (LVM)
+   - DiskSize: 40GB (LVM)
    - CPU: 1
    - RAM: 512MB
 
@@ -48,11 +48,12 @@ git clone git@github.com:arfr/vagrant-boxes.git
 
 ### Build
 
+manual
 ```sh
 cd vagrant-boxes/packer/ubuntu/ubuntu-14.04-amd64
 packer build packer.json
 ```
-or (windows)
+on windows
 ```sh
 cd vagrant-boxes
 build
@@ -82,11 +83,8 @@ config.vm.box_url = "http://boxes.arfr.de/ubuntu-14.04-amd64.box"
 
 ## TODO
 
-- fix Ubuntu 14.04 builds
 - add hostnames
-- increase disk size
 - Prevent packaged version of VirtualBox Guest Additions being installed (fix deb8.1)
-- pre install ansible
 - update Google Drive
 - add build.sh (for linux)
 

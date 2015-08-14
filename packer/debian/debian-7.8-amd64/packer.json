@@ -18,7 +18,7 @@
             ["modifyvm", "{{.Name}}", "--cpus", "1"]
         ],
 
-        "disk_size": 10240,
+        "disk_size": 40960,
 
         "iso_url": "{{ user `iso_url` }}",
         "iso_checksum": "{{ user `iso_checksum` }}",
@@ -32,7 +32,7 @@
 
         "boot_command": [
             "<esc><wait>",
-            "install auto=true priority=critical preseed/url=http://{{ .HTTPIP }}:{{ .HTTPPort }}/preseed.cfg hostname=vagrant-debian-7.8-amd64",
+            "install auto=true priority=critical preseed/url=http://{{ .HTTPIP }}:{{ .HTTPPort }}/preseed.cfg",
             "<enter>"
         ],
 
