@@ -27,6 +27,8 @@ os[4]='centos-6.7';
 os[5]='centos-7.1.1503';
 
 read -p "Please choice: " choice
+# echo
+read -p "Which architecture? [amd64|i386]: " arch
 echo
 
 box=${os[$choice]}
