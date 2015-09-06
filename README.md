@@ -82,7 +82,7 @@ config.vm.box_url = "http://boxes.arfr.de/ubuntu-14.04-amd64.box"
 ```
 
 ## TODO
-
+- update debian from 7.8 to 7.9
 - add hostnames
 - Prevent packaged version of VirtualBox Guest Additions being installed (fix deb8.1)
 - update Google Drive
