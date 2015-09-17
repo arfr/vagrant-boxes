@@ -1,13 +1,13 @@
 {
     "variables": {
-        "vm_name": "debian-8.1-amd64",
-        "iso_url": "http://cdimage.debian.org/debian-cd/8.1.0/amd64/iso-cd/debian-8.1.0-amd64-netinst.iso",
-        "iso_checksum": "5d0a1f804d73aee73eee7efbb38456390558094fd19894a573f1514ca44347e0"
+        "vm_name": "debian-8.2-i386",
+        "iso_url": "http://cdimage.debian.org/debian-cd/8.2.0/i386/iso-cd/debian-8.2.0-i386-netinst.iso",
+        "iso_checksum": "e4e8964aaf13a137e87de950f1ffd142ca3980a2db683534018e1ca18993be37"
     },
     "builders": [{
         "vm_name": "{{ user `vm_name` }}",
         "type": "virtualbox-iso",
-        "guest_os_type": "Debian_64",
+        "guest_os_type": "Debian",
 
         "headless": false,
         "guest_additions_path": "VBoxGuestAdditions_{{.Version}}.iso",

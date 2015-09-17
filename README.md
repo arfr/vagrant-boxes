@@ -1,13 +1,13 @@
 # Vagrant Boxes
 
-> Tested on Windows 7 with VirtualBox 5.0.0, Packer 0.8.5 and Vagrant 1.7.4
+> Tested on Windows 7 with VirtualBox 5.0.4, Packer 0.8.6 and Vagrant 1.7.4
 
 ## Boxes
 
 All Boxes are server, minimal install and non-desktop
 
- - Debian 8.1
- - Debian 7.8
+ - Debian 8.2
+ - Debian 7.9
  - Ubuntu 14.04 (14.04.3 LTS)
  - CentOS 7.1.1503 (amd64 only)
  - CentOS 6.7
@@ -82,8 +82,6 @@ config.vm.box_url = "http://boxes.arfr.de/ubuntu-14.04-amd64.box"
 ```
 
 ## TODO
-- update debian from 7.8 to 7.9
-- update debian from 8.1 to 8.2
 - add hostnames
 - Prevent packaged version of VirtualBox Guest Additions being installed (fix deb8.1)
 - update Google Drive
