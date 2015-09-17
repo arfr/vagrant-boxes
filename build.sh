@@ -11,7 +11,7 @@ echo "
     0 - All
 
     1 - Debian 7.9
-    2 - Debian 8.1
+    2 - Debian 8.2
     3 - Ubuntu 14.04 (14.04.3 LTS)
     4 - CentOS 6.7
     5 - CentOS 7.1.1503 (amd64 only)
@@ -21,7 +21,7 @@ echo "
 "
 
 os[1]='debian-7.9';
-os[2]='debian-8.1';
+os[2]='debian-8.2';
 os[3]='ubuntu-14.04';
 os[4]='centos-6.7';
 os[5]='centos-7.1.1503';
