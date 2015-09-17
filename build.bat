@@ -9,7 +9,7 @@ echo.
 echo --------------------------------------------------------------------------------
 echo    0 - All
 echo.
-echo    1 - Debian 7.8
+echo    1 - Debian 7.9
 echo    2 - Debian 8.1
 echo    3 - Ubuntu 14.04 (14.04.3 LTS)
 echo    4 - CentOS 6.7
@@ -32,18 +32,18 @@ GOTO=%pick%
     goto 1
 
 :1
-    echo BUILD:     debian-7.8-%arch%.box
+    echo BUILD:     debian-7.9-%arch%.box
     echo --------------------------------------------------------------------------------
-    chdir %root_dir%\packer\debian\debian-7.8-%arch%
+    chdir %root_dir%\packer\debian\debian-7.9-%arch%
     packer build packer.json
     echo.
-    echo REMOVE:    debian-7.8-%arch%
+    echo REMOVE:    debian-7.9-%arch%
     echo --------------------------------------------------------------------------------
-    vagrant box remove debian-7.8-%arch%
+    vagrant box remove debian-7.9-%arch%
     echo.
-    echo ADD:       debian-7.8-%arch%
+    echo ADD:       debian-7.9-%arch%
     echo --------------------------------------------------------------------------------
-    vagrant box add debian-7.8-%arch% %root_dir%\boxes\virtualbox\debian-7.8-%arch%.box
+    vagrant box add debian-7.9-%arch% %root_dir%\boxes\virtualbox\debian-7.9-%arch%.box
     echo.
     if %pick% == 0 (goto 2) else (goto end)
 

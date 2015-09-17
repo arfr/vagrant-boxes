@@ -1,13 +1,13 @@
 {
     "variables": {
-        "vm_name": "debian-7.8-i386",
-        "iso_url": "http://cdimage.debian.org/cdimage/archive/7.8.0/i386/iso-cd/debian-7.8.0-i386-netinst.iso",
-        "iso_checksum": "e79597f61fa0a4e9a4590186c15f0851c7baa355c88f8f55005badec32a805e9"
+        "vm_name": "debian-7.9-amd64",
+        "iso_url": "http://cdimage.debian.org/cdimage/archive/7.9.0/amd64/iso-cd/debian-7.9.0-amd64-netinst.iso",
+        "iso_checksum": "b6a19b4cf1d046e5eba1ae235a94824bca5a7c8f092a28216396c9d585ef709d"
     },
     "builders": [{
         "vm_name": "{{ user `vm_name` }}",
         "type": "virtualbox-iso",
-        "guest_os_type": "Debian",
+        "guest_os_type": "Debian_64",
 
         "headless": false,
         "guest_additions_path": "VBoxGuestAdditions_{{.Version}}.iso",
