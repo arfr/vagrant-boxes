@@ -13,7 +13,7 @@ echo    1 - Debian 7.9
 echo    2 - Debian 8.2
 echo    3 - Ubuntu 14.04 (14.04.3 LTS)
 echo    4 - CentOS 6.7
-echo    5 - CentOS 7.1.1511 (amd64 only)
+echo    5 - CentOS 7.2.1511 (amd64 only)
 echo.
 echo    q - Quit
 echo.
@@ -102,18 +102,18 @@ GOTO=%pick%
         echo.
         goto end
     )
-    echo BUILD:     centos-7.1.1511-%arch%.box
+    echo BUILD:     centos-7.2.1511-%arch%.box
     echo --------------------------------------------------------------------------------
-    chdir %root_dir%\packer\centos\centos-7.1.1511-%arch%
+    chdir %root_dir%\packer\centos\centos-7.2.1511-%arch%
     packer build packer.json
     echo.
-    echo REMOVE:    centos-7.1.1511-%arch%
+    echo REMOVE:    centos-7.2.1511-%arch%
     echo --------------------------------------------------------------------------------
-    vagrant box remove centos-7.1.1511-%arch%
+    vagrant box remove centos-7.2.1511-%arch%
     echo.
-    echo ADD:       centos-7.1.1511-%arch%
+    echo ADD:       centos-7.2.1511-%arch%
     echo --------------------------------------------------------------------------------
-    vagrant box add centos-7.1.1511-%arch% %root_dir%\boxes\virtualbox\centos-7.1.1511-%arch%.box
+    vagrant box add centos-7.2.1511-%arch% %root_dir%\boxes\virtualbox\centos-7.2.1511-%arch%.box
     echo.
     goto end
 
