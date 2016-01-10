@@ -1,0 +1,59 @@
+{
+    "variables": {
+        "vm_name": "centos-7.1.1511-amd64",
+        "iso_url": "http://ftp.tu-chemnitz.de/pub/linux/centos/7/isos/x86_64/CentOS-7-x86_64-Minimal-1511.iso",
+        "iso_checksum": "f90e4d28fa377669b2db16cbcb451fcb9a89d2460e3645993e30e137ac37d284"
+    },
+    "builders": [{
+        "vm_name": "{{ user `vm_name` }}",
+        "type": "virtualbox-iso",
+        "guest_os_type": "RedHat_64",
+
+        "headless": false,
+        "guest_additions_path": "VBoxGuestAdditions_{{.Version}}.iso",
+        "virtualbox_version_file": ".vbox_version",
+
+        "vboxmanage": [
+            ["modifyvm", "{{.Name}}", "--memory", "512"],
+            ["modifyvm", "{{.Name}}", "--cpus", "1"]
+        ],
+
+        "disk_size": 40960,
+
+        "iso_url": "{{ user `iso_url` }}",
+        "iso_checksum": "{{ user `iso_checksum` }}",
+        "iso_checksum_type": "sha256",
+
+        "http_directory": "http",
+
+        "ssh_password": "password",
+        "ssh_username": "root",
+        "ssh_wait_timeout": "10000s",
+
+        "boot_command": [
+            "<esc><wait>",
+            "linux ks=http://{{ .HTTPIP }}:{{ .HTTPPort }}/ks.cfg",
+            "<enter><wait>"
+        ],
+
+        "shutdown_command": "shutdown -h now"
+    }],
+    "provisioners": [{
+        "type": "shell",
+        "scripts": [
+            "scripts/repos.sh",
+            "scripts/base.sh",
+            "scripts/puppet.sh",
+            "scripts/vagrant.sh",
+            "scripts/virtualbox.sh",
+            "scripts/grub.sh",
+            "scripts/cleanup.sh",
+            "scripts/zerodisk.sh"
+        ]
+    }],
+    "post-processors": [{
+        "type": "vagrant",
+        "compression_level": 9,
+        "output": "../../../boxes/{{.Provider}}/{{ user `vm_name` }}.box"
+    }]
+}
