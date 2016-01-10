@@ -1,6 +1,6 @@
 # Vagrant Boxes
 
-> Tested on Windows 7 with VirtualBox 5.0.4, Packer 0.8.6 and Vagrant 1.7.4
+> Tested on Windows 7 with VirtualBox 5.0.10, Packer 0.8.6 and Vagrant 1.7.4
 
 ## Boxes
 
