@@ -6,7 +6,7 @@
 
 All Boxes are server, minimal install and non-desktop
 
- - Debian 8.2
+ - Debian 8.3
  - Debian 7.9
  - Ubuntu 14.04 (14.04.3 LTS)
  - CentOS 7.2.1511 (amd64 only)
