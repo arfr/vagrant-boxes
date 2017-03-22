@@ -1,4 +1,4 @@
-# Vagrant Boxes
+# Vagrant Boxes (not maintained anymore, please use https://github.com/chef/bento)
 
 > Tested on Windows 7 with VirtualBox 5.0.10, Packer 0.8.6 and Vagrant 1.7.4
 
